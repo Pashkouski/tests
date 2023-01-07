@@ -10,14 +10,14 @@ export type AddressType = {
 
 export type HouseType = {
     buildedAt: number
-    repaired: boolean
+    repaired?: boolean
     address: AddressType
 }
 
 export type CityType = {
     title: string
     houses: Array<HouseType>
-    governmentBuildings: Array<GovernmentBuildingType>
+    governmentBuildings: GovernmentBuildingType[]
     citizensNumber: number
 }
 
